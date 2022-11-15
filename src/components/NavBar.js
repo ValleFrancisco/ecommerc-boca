@@ -7,16 +7,19 @@ const NavBar = ({greeting}) => {
     
 return ( <div>
     <Navbar bg="primary" variant="dark">
-        <Container>
+        <Container>     
+            <button>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Boca_escudo.png" width="40"></img>     
+            </button>     
           <Navbar.Brand href="#home">Inicio</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Futbol</Nav.Link>
+            <Nav.Link href="#futbol">Futbol</Nav.Link>
             <Nav.Link href="#features">Entrenamiento</Nav.Link>
             <Nav.Link href="#pricing">Tiempo Libre</Nav.Link>
           </Nav>
+          <CartWidgets/>
         </Container>
-        <CartWidgets/>
-      </Navbar>
+        </Navbar>
     <p>{greeting}</p>
     </div>
 
